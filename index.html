@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/removed-logo-bg.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dietri Profile Page</title>
+  </head>
+  <body>
+    <div class="full-contain">
+      <header class="header">
+        <a href="#" class="logo-link">
+          <img src="img/removed-logo-bg.png" alt="LOGO" class="logo" />
+        </a>
+        <div class="nav__container">
+          <nav class="navbar">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="#">Meal Plans</a></li>
+              <li><a class="nav-link" href="#">Download</a></li>
+              <li><a class="nav-link" href="#">About</a></li>
+              <li><a class="nav-link" href="#">Health Tips</a></li>
+              <li><a class="nav-link" href="#">Contact</a></li>
+              <li><a class="style-2" href="#">Sign Out</a></li>
+            </ul>
+          </nav>
+
+          <!-- <div class="heading-image">
+            <img src="img/avatar.jpg" alt="Avatar image" />
+            <p>Hi, Cath!</p>
+          </div> -->
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="full__content">
+        <div class="content">
+          <div class="profile">
+            <h3>Profile</h3>
+          </div>
+          <div class="flex__container">
+            <div class="flex__one">
+              <div class="flex__image">
+                <img src="img/profile-image.png" alt="My image" />
+              </div>
+              <div class="flex__name">
+                <h3>Nicholas Nwaeze</h3>
+              </div>
+              <div class="flex__goals">
+                <div>
+                  <p class="p">Goals</p>
+                </div>
+                <!-- <div>
+                  <h2 class="weight-options">
+                    Loose weight
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </h2>
+                </div> -->
+                <div class="select-box">
+                  <div class="options-container">
+                    <!-- <div>
+                      <h2 class="weight-options">
+                        Loose weight
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                      </h2>
+                    </div> -->
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="loose-weight"
+                        name="category"
+                      />
+                      <label for="loose-weight">Loose weight</label>
+                    </div>
+
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="gain-weight"
+                        name="category"
+                      />
+                      <label for="gain-weight">Gain weight</label>
+                    </div>
+
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="maintain-weight"
+                        name="category"
+                      />
+                      <label for="maintain-weight">Maintain weight</label>
+                    </div>
+
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="others"
+                        name="category"
+                      />
+                      <label for="others">Others</label>
+                    </div>
+                  </div>
+                  <div class="weight">
+                    <h2 class="weight-options">Choose option</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex__two">
+              <div class="profile__edit">
+                <button class="edit__link">Edit profile</button>
+              </div>
+              <div class="form">
+                <form action="#">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Username"
+                    />
+                    <!-- <div class="examples">
+                      <p class="example">Nicholas Nwaeze</p>
+                    </div> -->
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      name="age"
+                      id="age"
+                      placeholder="Age"
+                    />
+                    <!-- <div class="examples">
+                      <p class="example">34</p>
+                    </div> -->
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                    <!-- <div class="examples">
+                      <p class="example">NicholasN@gmail.com</p>
+                    </div> -->
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Current Weight"
+                    />
+                    <!-- <div class="examples">
+                      <p class="example">95kg</p>
+                    </div> -->
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Height"
+                    />
+                    <!-- <div class="examples">
+                      <p class="example">176cm</p>
+                    </div> -->
+                  </div>
+                </form>
+              </div>
+
+              <div class="save">
+                <button class="save-link">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal hidden">
+          <div class="modal-heading">
+            <h3>Upload file</h3>
+          </div>
+          <div class="modal-flex">
+            <div class="modal-p">
+              <p>Select a file on your computer (not more than 25mb)</p>
+            </div>
+            <div class="modal-buttons">
+              <button>Choose file</button>
+              <p>IMG_3876.JPG</p>
+            </div>
+            <div class="modal-end">
+              <button class="button-1">Upload file</button>
+              <button class="button-2">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="section__a">
+      <div class="line"></div>
+    </section>
+
+    <section class="section__b">
+      <div class="end-p">
+        <div class="years">
+          <p class="year copy">&copy;</p>
+          <p class="year">2022</p>
+        </div>
+        <div class="long-text">
+          <p class="compensation">
+            Dietri may receive compensation for some links to products and
+            services on this website. Offers may be subject to change without
+            notice. All Right Reserved. Use of this site constitutes acceptance
+            of our Privacy Policy | Ad Choices | Terms of Service| California Do
+            Not Sell Web Accessibility
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
